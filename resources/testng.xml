@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNg Session">
+
+  <test name="Parameterization" enabled="false">
+  
+  <parameter name= "url" value ="https://rahulshettyacademy.com/loginpagePractise/"/>
+  <parameter name ="username" value ="rahulshettyacademy"/>
+  <parameter name ="password" value ="Learning@830$3mK2"/>
+  
+  <classes>
+    <class name = "TestNgTutorial.ParametersTest" />
+  </classes>
+  </test> 
+  
+  <test name="IncludeExclude">
+   <classes>
+    <class name = "TestNgTutorial.TestNgAnnotations_2">
+     <methods>
+      <!--<exclude name = "invocationCountTest"></exclude> -->
+      <!--<include name = "invocationCountTest"></include>-->
+      <exclude name = "invocation.*"></exclude>
+     </methods>
+    </class>
+  </classes>
+  </test> 
+</suite> 
