@@ -14,9 +14,9 @@ import BasePage.TestBase;
 
 public class LoginPage extends TestBase{
 	
-	public LoginPage(WebDriver driver)
+	public LoginPage()
 	{
-		super(driver);
+		//super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -40,7 +40,7 @@ public class LoginPage extends TestBase{
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		loginBtn.click();
-		return new ProductCatalog(driver);
+		return new ProductCatalog();
 	}
 	
 	

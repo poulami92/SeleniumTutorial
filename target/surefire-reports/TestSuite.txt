@@ -1,4 +1,45 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.72 s -- in TestSuite
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 53.77 s <<< FAILURE! -- in TestSuite
+CucumberRunner.GreenKartFailedRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](2) -- Time elapsed: 21.06 s <<< FAILURE!
+java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///c:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+
+CucumberRunner.GreenKartRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](1) -- Time elapsed: 24.99 s <<< FAILURE!
+java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///c:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+
+CucumberRunner.GreenKartRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](2) -- Time elapsed: 30.81 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Navigation timed out after 20000 ms
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1c4d0fc1-0004-45bf-bb26-cd504c59befa, get {url=https://rahulshettyacademy.com/seleniumPractise/#/}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 348, moz:profile: C:\Users\MSUSER~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1c4d0fc1-0004-45bf-bb26-cd504c59befa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:369)
+	at MyHooks.GreenKartHooks.setUp(GreenKartHooks.java:35)
+

@@ -15,9 +15,9 @@ import TestUtility.TestUtil;
 
 public class ProductCatalog extends TestBase{
 	
-	public ProductCatalog(WebDriver driver)
+	public ProductCatalog()
 	{
-		super(driver);
+		//super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -58,13 +58,13 @@ public class ProductCatalog extends TestBase{
 	public CartPage clickOnCart()
 	{
 		cart.click();
-		return new CartPage(driver);
+		return new CartPage();
 	}
 	
 	public OrdersPage clickOnOrders()
 	{
 		ordersBtn.click();
-		return new OrdersPage(driver);
+		return new OrdersPage();
 	}
 	
 }

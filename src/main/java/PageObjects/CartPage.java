@@ -16,9 +16,9 @@ import BasePage.TestBase;
 
 public class CartPage extends TestBase{
 	
-	public CartPage(WebDriver driver)
+	public CartPage()
 	{
-		super(driver);
+		//super(driver);
 		PageFactory.initElements(driver, this);
 	}
  
@@ -41,7 +41,7 @@ public class CartPage extends TestBase{
 	public CheckOutPage clickOnCheckout()
 	{
 		clickElementByJs(checkOutBtn);
-		return new CheckOutPage(driver);
+		return new CheckOutPage();
 		
 	}
 	

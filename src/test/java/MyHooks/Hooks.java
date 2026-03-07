@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import BasePage.TestBase;
-import Factory.DriverFactory;
+import DriverFactory.DriverFactory;
 import PageObjects.LoginPage;
 import TestUtility.TestUtil;
 import io.cucumber.java.After;
@@ -22,19 +22,18 @@ import io.cucumber.java.Scenario;
 public class Hooks {
 	
 	public static Properties prop;
-	private DriverFactory driverFactory;
-	private WebDriver driver;
 	public LoginPage loginPage;
 	
-	@BeforeAll
+	@BeforeAll()
 	public static void setUpProperties() throws IOException
 	{
+		System.out.println("Setting up properties file");
 		prop = new Properties();
 		FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Config\\config.properties");
 		prop.load(fs);
 	}
 	
-	@Before()
+	@Before("@OrderSubmit")
 	public void setupBrowser(Scenario sc)
 	{
 		System.out.println("Launching Browser "+sc.getName());
@@ -43,50 +42,26 @@ public class Hooks {
 		
 		String headless = System.getProperty("headless")!=null? System.getProperty("headless"):"false";
 		
-		driverFactory = new DriverFactory();
+		DriverFactory.setDriver(browserName, headless);
 		
-		driver=driverFactory.setDriver(browserName, headless);
-		
-		driver.get(prop.getProperty("url"));
+		DriverFactory.getDriver().get(prop.getProperty("url"));
 		
 	}
 	
-//	@Before(order=2)
-//	public void setupUrl(Scenario sc)
-//	{
-//		System.out.println("Launching Url "+sc.getName());
-//	}
-	
-//	@After(order=2)
-//	public void tearDownLogOut(Scenario sc)
-//	{
-//		System.out.println("Logged out application "+sc.getName());
-//	}
-	
-	@After()
+	@After("@OrderSubmit")
 	public void tearDownBrowser(Scenario sc) throws IOException
 	{
 		System.out.println("closing browser "+sc.getName());
 		String scenarioName= sc.getName().replace(" ", "_");
 		if(sc.isFailed())
 		{
-			byte screenshot[]= ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			byte screenshot[]= ((TakesScreenshot)DriverFactory.getDriver()).getScreenshotAs(OutputType.BYTES);
 			sc.attach(screenshot, "image/png", scenarioName);
 		}
-		driver.quit();
+		DriverFactory.quitDriver();
 	}
 	
-//	@BeforeStep()
-//	public void setupBeforeStep(Scenario sc)
-//	{
-//		System.out.println("BeforeStep "+sc.getName());
-//	}
-//	
-//	@AfterStep()
-//	public void setupAfterStep(Scenario sc)
-//	{
-//		System.out.println("AfterStep "+sc.getName());
-//	}
+
 	
 	
 

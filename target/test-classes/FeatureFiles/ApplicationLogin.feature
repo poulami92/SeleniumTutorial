@@ -6,8 +6,8 @@ And User launch browser
 And Hit banking home page url
 
 
-
-Scenario Outline: Admin pade default login
+@AppLogin
+Scenario Outline: Admin page default login
 
 Given User is on NetBanking landing page
 When User logged in to banking application with "<Username>" and password "<Password>"
@@ -20,7 +20,7 @@ Examples:
 | admin    | 1234     |
 | user     | 5678     |
 
-@Smoke
+@AppLogin @PracticeLogin
 Scenario: User Page Sign Up
 
 Given User is on Practice landing page

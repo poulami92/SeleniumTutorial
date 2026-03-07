@@ -17,9 +17,9 @@ import BasePage.TestBase;
 
 public class ConfirmationPage extends TestBase{
 	
-	public ConfirmationPage(WebDriver driver)
+	public ConfirmationPage()
 	{
-		super(driver);
+		//super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	

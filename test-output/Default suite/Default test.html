@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 04 02:18:48 IST 2026</td>
+<td>Started on:</td><td>Sun Mar 08 01:25:14 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (433 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8447 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,20 +76,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CucumberRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin pade default login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>CucumberRunner.TestNgRunner@6200f9cb</td></tr>
-<tr>
-<td title='CucumberRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Page Sign Up", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>CucumberRunner.TestNgRunner@6200f9cb</td></tr>
-<tr>
-<td title='CucumberRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin pade default login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>CucumberRunner.TestNgRunner@6200f9cb</td></tr>
+<td title='CucumberRunner.GreenKartFailedRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartFailedRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
+<td><div><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1202823033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1202823033'><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+</pre></div></td>
+<td>7</td>
+<td>CucumberRunner.GreenKartFailedRunner@4e3958e7</td></tr>
 </table><p>
 </body>
 </html>

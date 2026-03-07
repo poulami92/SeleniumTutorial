@@ -3,7 +3,7 @@ Feature: Purchase Order on Ecomm Site
 #Background:
 #  Given User Landed on Ecommerce Page
 
-@Smoke
+@OrderSubmit
 Scenario Outline: Submitting Order
 
   Given User logged in to application
@@ -22,13 +22,13 @@ Scenario Outline: Submitting Order
 
   And User Place Order
 
-  Then "THANKYOU FOR THE ORDER." message displayed on confirmation page
+  Then "THANKYOU FOR THE ORDER1." message displayed on confirmation page
 
 Examples:
 | Username      | Password  | Products    |
 | Gpd@gmail.com | Kolkata@1 | ZARA,ADIDAS |
 
-@ErrorValidation
+@ErrorValidation @OrderSubmit 
 Scenario Outline: Login Error Validation
 
   Given User logged in to application

@@ -8,13 +8,13 @@
 
 <test name="E2EFrameworkTest" enabled="true" thread-count="5"> 
   <classes>
-    <class name = "E2EFrameworkTest.OrderSubmitE2ETest" />
+    <class name = "TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest" />
   </classes>
 </test>
 
-<test name="E2EValidationTest" enabled="false" thread-count="5"> 
+<test name="E2EValidationTest" enabled="true" thread-count="5"> 
   <classes>
-    <class name = "E2EFrameworkTest.LoginErrorValidationTest" />
+    <class name = "TestNGFramework_OrderSubmitTest.LoginErrorValidationTest" />
   </classes>
 </test> 
 </suite> 

@@ -15,9 +15,9 @@ import BasePage.TestBase;
 
 public class OrdersPage extends TestBase{
 	
-	public OrdersPage(WebDriver driver)
+	public OrdersPage()
 	{
-		super(driver);
+		//super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	

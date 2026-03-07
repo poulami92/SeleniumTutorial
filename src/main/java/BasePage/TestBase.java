@@ -14,22 +14,24 @@ import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import DriverFactory.DriverFactory;
+
 public class TestBase {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	
-	public TestBase(WebDriver driver)
+	public TestBase()
 	{
-		this.driver= driver;
+		driver= DriverFactory.getDriver();
 	}
 	
-	public static WebElement findElement(By by)
+	public WebElement findElement(By by)
 	{
 		return new WebDriverWait(driver,Duration.ofSeconds(5)).
         until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 	
-	public static void waitTillElementInvisible(By by)
+	public void waitTillElementInvisible(By by)
 	{
 		new WebDriverWait(driver,Duration.ofSeconds(5)).
         until(ExpectedConditions.invisibilityOfElementLocated(by));
@@ -41,7 +43,7 @@ public class TestBase {
 		js.executeScript("arguments[0].click();",element);
 	}
 	
-	public static List<WebElement> findElements(By by)
+	public List<WebElement> findElements(By by)
 	{
 		return new WebDriverWait(driver,Duration.ofSeconds(5)).
         until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));

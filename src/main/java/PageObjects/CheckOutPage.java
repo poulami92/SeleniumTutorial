@@ -16,9 +16,9 @@ import BasePage.TestBase;
 
 public class CheckOutPage extends TestBase{
 	
-	public CheckOutPage(WebDriver driver)
+	public CheckOutPage()
 	{
-		super(driver);
+		//super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -63,7 +63,7 @@ public class CheckOutPage extends TestBase{
 	public ConfirmationPage clickPlaceOrder()
 	{
 		findElement(getPlaceOrderLocator()).click();
-		return new ConfirmationPage(driver);
+		return new ConfirmationPage();
 	}
 	
 }

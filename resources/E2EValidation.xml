@@ -9,7 +9,7 @@
     <test name="E2EValidationTest">
 
         <classes>
-            <class name="E2EFrameworkTest.LoginErrorValidationTest"/>
+            <class name="TestNGFramework_OrderSubmitTest.LoginErrorValidationTest"/>
         </classes>
 
     </test>
