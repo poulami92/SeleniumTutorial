@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNg Session]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GridTest_ff(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestNgTutorial.Selenium_Grid">
+        <methods>
+          <include name="TearDown"/>
+          <include name="gridTest"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- TestNgTutorial.Selenium_Grid -->
+    </classes>
+  </test> <!-- GridTest_ff(failed) -->
+  <test thread-count="5" name="GridTest_ch(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestNgTutorial.Selenium_Grid">
+        <methods>
+          <include name="TearDown"/>
+          <include name="gridTest"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- TestNgTutorial.Selenium_Grid -->
+    </classes>
+  </test> <!-- GridTest_ch(failed) -->
+</suite> <!-- Failed suite [TestNg Session] -->

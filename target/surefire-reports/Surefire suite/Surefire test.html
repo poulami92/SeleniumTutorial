@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 08 02:11:02 IST 2026</td>
+<td>Started on:</td><td>Wed Mar 11 16:16:44 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>53 seconds (53260 ms)</td>
+<tr><td>Total time:</td><td>55 seconds (55772 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,68 +76,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CucumberRunner.GreenKartRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
-<td><div><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
-	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
-	at ✽.Check product exists(file:///c:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1258716373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1258716373'><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
+<td title='CucumberRunner.E2EOrderSubmitRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.E2EOrderSubmitRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submitting Order", "Purchase Order on Ecomm Site"</td>
+<td><div><pre>java.lang.AssertionError: expected [THANKYOU FOR THE ORDER.] but found [THANKYOU FOR THE ORDER1.]
+	at StepDefinitions.OrderSubmitSteps.verifyConfirmationMessage(OrderSubmitSteps.java:92)
+	at ✽.&quot;THANKYOU FOR THE ORDER1.&quot; message displayed on confirmation page(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/OrderSubmit.feature:25)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1249070084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1249070084'><pre>java.lang.AssertionError: expected [THANKYOU FOR THE ORDER.] but found [THANKYOU FOR THE ORDER1.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
-	at ✽.Check product exists(file:///c:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+	at StepDefinitions.OrderSubmitSteps.verifyConfirmationMessage(OrderSubmitSteps.java:92)
+	at ✽.&quot;THANKYOU FOR THE ORDER1.&quot; message displayed on confirmation page(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/OrderSubmit.feature:25)
 </pre></div></td>
-<td>24</td>
-<td>CucumberRunner.GreenKartRunner@16ec5519</td></tr>
-<tr>
-<td title='CucumberRunner.GreenKartRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Navigation timed out after 20000 ms
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [1c4d0fc1-0004-45bf-bb26-cd504c59befa, get {url=https://rahulshettyacademy.com/seleniumPractise/#/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 348, moz:profile: C:\Users\MSUSER~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 1c4d0fc1-0004-45bf-bb26-cd504c59befa
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:369)
-	at MyHooks.GreenKartHooks.setUp(GreenKartHooks.java:35)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2003351971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2003351971'><pre>org.openqa.selenium.TimeoutException: Navigation timed out after 20000 ms
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [1c4d0fc1-0004-45bf-bb26-cd504c59befa, get {url=https://rahulshettyacademy.com/seleniumPractise/#/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 348, moz:profile: C:\Users\MSUSER~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 1c4d0fc1-0004-45bf-bb26-cd504c59befa
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:369)
-	at MyHooks.GreenKartHooks.setUp(GreenKartHooks.java:35)
-</pre></div></td>
-<td>30</td>
-<td>CucumberRunner.GreenKartRunner@16ec5519</td></tr>
+<td>18</td>
+<td>CucumberRunner.E2EOrderSubmitRunner@16ec5519</td></tr>
 <tr>
 <td title='CucumberRunner.GreenKartFailedRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartFailedRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
 <td><div><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
 	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
-	at ✽.Check product exists(file:///c:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1716860088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1716860088'><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1169677724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1169677724'><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -145,10 +107,28 @@ Session ID: 1c4d0fc1-0004-45bf-bb26-cd504c59befa
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
-	at ✽.Check product exists(file:///c:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
 </pre></div></td>
-<td>21</td>
-<td>CucumberRunner.GreenKartFailedRunner@50eac852</td></tr>
+<td>11</td>
+<td>CucumberRunner.GreenKartFailedRunner@2f7298b</td></tr>
+<tr>
+<td title='CucumberRunner.GreenKartRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
+<td><div><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1637094314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637094314'><pre>java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+</pre></div></td>
+<td>14</td>
+<td>CucumberRunner.GreenKartRunner@188715b5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -159,15 +139,40 @@ Session ID: 1c4d0fc1-0004-45bf-bb26-cd504c59befa
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CucumberRunner.GreenKartFailedRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartFailedRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "CheckOut Product", "Search and Place Order from GreenKart"</td>
+<td title='CucumberRunner.ApplicationLoginRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.ApplicationLoginRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin page default login", "Application Login"</td>
 <td></td>
-<td>18</td>
-<td>CucumberRunner.GreenKartFailedRunner@50eac852</td></tr>
+<td>0</td>
+<td>CucumberRunner.ApplicationLoginRunner@7722c3c3</td></tr>
+<tr>
+<td title='CucumberRunner.ApplicationLoginRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.ApplicationLoginRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Page Sign Up", "Application Login"</td>
+<td></td>
+<td>0</td>
+<td>CucumberRunner.ApplicationLoginRunner@7722c3c3</td></tr>
 <tr>
 <td title='CucumberRunner.GreenKartRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "CheckOut Product", "Search and Place Order from GreenKart"</td>
 <td></td>
-<td>30</td>
-<td>CucumberRunner.GreenKartRunner@16ec5519</td></tr>
+<td>16</td>
+<td>CucumberRunner.GreenKartRunner@188715b5</td></tr>
+<tr>
+<td title='CucumberRunner.E2EOrderSubmitRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.E2EOrderSubmitRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login Error Validation", "Purchase Order on Ecomm Site"</td>
+<td></td>
+<td>4</td>
+<td>CucumberRunner.E2EOrderSubmitRunner@16ec5519</td></tr>
+<tr>
+<td title='CucumberRunner.ApplicationLoginRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.ApplicationLoginRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin page default login", "Application Login"</td>
+<td></td>
+<td>0</td>
+<td>CucumberRunner.ApplicationLoginRunner@7722c3c3</td></tr>
+<tr>
+<td title='CucumberRunner.GreenKartFailedRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartFailedRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
+<td></td>
+<td>10</td>
+<td>CucumberRunner.GreenKartFailedRunner@2f7298b</td></tr>
+<tr>
+<td title='CucumberRunner.GreenKartRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberRunner.GreenKartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"</td>
+<td></td>
+<td>13</td>
+<td>CucumberRunner.GreenKartRunner@188715b5</td></tr>
 </table><p>
 </body>
 </html>

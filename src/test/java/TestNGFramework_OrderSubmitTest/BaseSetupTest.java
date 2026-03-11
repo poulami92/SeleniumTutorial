@@ -16,12 +16,9 @@ import DriverFactory.DriverFactory;
 import PageObjects.LoginPage;
 
 public class BaseSetupTest {
-	
-	//public WebDriver driver;
 	public static Properties prop;
 	public LoginPage loginPage;
 	
-	//private static ThreadLocal<WebDriver> th = new ThreadLocal<>();
 
 	
 	public BaseSetupTest() throws IOException
@@ -59,11 +56,8 @@ public class BaseSetupTest {
 		
 		String headless = System.getProperty("headless")!=null? System.getProperty("headless"):"false";
 		
-		//DriverFactory driverFactory = new DriverFactory();
-		
 		DriverFactory.setDriver(browserName, headless);
 		
-		//return driver;
 	}
 
 }

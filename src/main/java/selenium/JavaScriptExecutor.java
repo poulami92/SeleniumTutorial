@@ -1,5 +1,7 @@
 package selenium;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +22,8 @@ public class JavaScriptExecutor {
 		
 		WebElement mousehover = driver.findElement(By.id("mousehover"));
 		
+		List<WebElement> setAttributeValue = driver.findElements(By.xpath("//div[@id='gf-BIG']//td[1]//a"));
+		
 		//flash(element,driver);
 		
 		//drawBorder(element,driver);
@@ -36,9 +40,9 @@ public class JavaScriptExecutor {
 		
 		//scrollPageDown(driver);
 		
-		scrollintoView(mousehover,driver);
+		//scrollintoView(mousehover,driver);
 		
-		
+		setAttributeValue(setAttributeValue,driver);
 
 	}
 	
@@ -108,6 +112,18 @@ public class JavaScriptExecutor {
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);",element);
+	}
+	
+	public static void setAttributeValue(List<WebElement> footerLinks, WebDriver driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		
+		for(WebElement e : footerLinks)
+		{
+			js.executeScript("arguments[0].setAttribute('target','_blank');", e);
+			
+			e.click();
+		}
 	}
 
 }
