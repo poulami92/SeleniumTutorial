@@ -1,22 +1,14 @@
 package TestNgTutorial;
 
-import org.testng.IRetryAnalyzer;
-import org.testng.ITestResult;
+import org.testng.IAnnotationTransformer;
+import org.testng.annotations.ITestAnnotation;
 
-public class RetryListener implements IRetryAnalyzer{
+public class RetryListener implements IAnnotationTransformer  {
+	
+	public void transform(ITestAnnotation annotation) 
+	{
 
-	int count = 0;
-	int retryLimit = 2;
-
-	@Override
-	public boolean retry(ITestResult result) {
-		
-		if(count<retryLimit)
-		{
-			count++;
-			return true;
-		}
-		return false;
-	}
+       annotation.setRetryAnalyzer(RetryAnalyzer.class);
+    }
 
 }

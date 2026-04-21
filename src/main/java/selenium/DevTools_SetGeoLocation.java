@@ -1,5 +1,6 @@
 package selenium;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -9,6 +10,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v143.emulation.Emulation;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DevTools_SetGeoLocation {
 
@@ -30,9 +33,12 @@ public class DevTools_SetGeoLocation {
         driver.manage().window().maximize();
         
         driver.executeCdpCommand("Emulation.setGeolocationOverride", coordinates);
-		driver.get("https://www.bookmyshow.com");
+		driver.get("https://www.google.com");
 		driver.findElement(By.name("q")).sendKeys("netflix",Keys.ENTER);
-		driver.findElements(By.cssSelector(".LC20lb")).get(0).click();
+		new WebDriverWait(driver,Duration.ofSeconds(20)).
+		until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".LC20lb")))
+		.get(0).click();
+		//driver.findElements(By.cssSelector(".LC20lb")).get(0).click();
 		String title =driver.findElement(By.cssSelector(".our-story-card-title")).getText();
 		System.out.println(title);
 

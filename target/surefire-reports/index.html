@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-TestNG_Session" class="navigator-link">
-              <span class="suite-name border-passed">TestNG Session</span>
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-TestNG_Session" class="navigator-link ">
-                    <span>C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\resources\E2EValidation.xml</span>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-TestNG_Session" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-TestNG_Session" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-TestNG_Session" class="navigator-link ">
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-TestNG_Session" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-TestNG_Session" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-TestNG_Session" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,80 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.GreenKartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.GreenKartFailedRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.E2EOrderSubmitRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Submitting Order&quot;, &quot;Purchase Order on Ecomm Site&quot;)">runScenario("Submitting Order", "Purchase Order on Ecomm Site")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-TestNG_Session" class="hide-methods passed suite-TestNG_Session"> (hide)</a> <!-- hide-methods passed suite-TestNG_Session -->
-                      <a href="#" panel-name="suite-TestNG_Session" class="show-methods passed suite-TestNG_Session"> (show)</a> <!-- show-methods passed suite-TestNG_Session -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content passed suite-TestNG_Session">
+                    <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Session" title="TestNGFramework_OrderSubmitTest.LoginErrorValidationTest" class="method navigator-link" hash-for-method="loginErrorValidation">loginErrorValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.GreenKartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Session" title="TestNGFramework_OrderSubmitTest.LoginErrorValidationTest" class="method navigator-link" hash-for-method="productErrorValidation">productErrorValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.GreenKartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;CheckOut Product&quot;, &quot;Search and Place Order from GreenKart&quot;)">runScenario("CheckOut Product", "Search and Place Order from GreenKart")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-TestNG_Session -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.ApplicationLoginRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Page Sign Up&quot;, &quot;Application Login&quot;)">runScenario("User Page Sign Up", "Application Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.GreenKartFailedRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.GreenKartFailedRunner" class="method navigator-link" hash-for-method="runScenario(&quot;CheckOut Product&quot;, &quot;Search and Place Order from GreenKart&quot;)">runScenario("CheckOut Product", "Search and Place Order from GreenKart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.ApplicationLoginRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin page default login&quot;, &quot;Application Login&quot;)">runScenario("Admin page default login", "Application Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.ApplicationLoginRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin page default login&quot;, &quot;Application Login&quot;)">runScenario("Admin page default login", "Application Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CucumberRunner.E2EOrderSubmitRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login Error Validation&quot;, &quot;Purchase Order on Ecomm Site&quot;)">runScenario("Login Error Validation", "Purchase Order on Ecomm Site")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,148 +176,417 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-TestNG_Session" class="panel TestNG_Session">
-          <div class="suite-TestNG_Session-class-passed">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestNGFramework_OrderSubmitTest.LoginErrorValidationTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">CucumberRunner.GreenKartRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginErrorValidation">
-                  </a> <!-- loginErrorValidation -->
-                  <span class="method-name">loginErrorValidation</span>
+                  <a name="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">
+                  </a> <!-- runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Experience in both Home and Offers Page","Search and Place Order from GreenKart")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">CucumberRunner.GreenKartFailedRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">
+                  </a> <!-- runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Experience in both Home and Offers Page","Search and Place Order from GreenKart")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
+	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">CucumberRunner.E2EOrderSubmitRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submitting Order&quot;, &quot;Purchase Order on Ecomm Site&quot;)">
+                  </a> <!-- runScenario("Submitting Order", "Purchase Order on Ecomm Site") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submitting Order","Purchase Order on Ecomm Site")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [THANKYOU FOR THE ORDER.] but found [THANKYOU FOR THE ORDER1.]
+	at StepDefinitions.OrderSubmitSteps.verifyConfirmationMessage(OrderSubmitSteps.java:92)
+	at ✽.&quot;THANKYOU FOR THE ORDER1.&quot; message displayed on confirmation page(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/OrderSubmit.feature:25)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CucumberRunner.GreenKartRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">
+                  </a> <!-- runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Experience in both Home and Offers Page","Search and Place Order from GreenKart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="productErrorValidation">
-                  </a> <!-- productErrorValidation -->
-                  <span class="method-name">productErrorValidation</span>
+                  <a name="runScenario(&quot;CheckOut Product&quot;, &quot;Search and Place Order from GreenKart&quot;)">
+                  </a> <!-- runScenario("CheckOut Product", "Search and Place Order from GreenKart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CheckOut Product","Search and Place Order from GreenKart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG_Session-class-passed -->
-        </div> <!-- panel TestNG_Session -->
-        <div panel-name="test-xml-TestNG_Session" class="panel">
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CucumberRunner.GreenKartFailedRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Experience in both Home and Offers Page&quot;, &quot;Search and Place Order from GreenKart&quot;)">
+                  </a> <!-- runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Experience in both Home and Offers Page","Search and Place Order from GreenKart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CheckOut Product&quot;, &quot;Search and Place Order from GreenKart&quot;)">
+                  </a> <!-- runScenario("CheckOut Product", "Search and Place Order from GreenKart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CheckOut Product","Search and Place Order from GreenKart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CucumberRunner.ApplicationLoginRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User Page Sign Up&quot;, &quot;Application Login&quot;)">
+                  </a> <!-- runScenario("User Page Sign Up", "Application Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User Page Sign Up","Application Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin page default login&quot;, &quot;Application Login&quot;)">
+                  </a> <!-- runScenario("Admin page default login", "Application Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin page default login","Application Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin page default login&quot;, &quot;Application Login&quot;)">
+                  </a> <!-- runScenario("Admin page default login", "Application Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin page default login","Application Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CucumberRunner.E2EOrderSubmitRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login Error Validation&quot;, &quot;Purchase Order on Ecomm Site&quot;)">
+                  </a> <!-- runScenario("Login Error Validation", "Purchase Order on Ecomm Site") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login Error Validation","Purchase Order on Ecomm Site")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\resources\E2EValidation.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;TestNG Session&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;TestUtility.Listeners&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;E2EValidationTest&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestNGFramework_OrderSubmitTest.LoginErrorValidationTest&quot;/&gt;
+      &lt;class name=&quot;CucumberRunner.ApplicationLoginRunner&quot;/&gt;
+      &lt;class name=&quot;CucumberRunner.E2EOrderSubmitRunner&quot;/&gt;
+      &lt;class name=&quot;CucumberRunner.GreenKartFailedRunner&quot;/&gt;
+      &lt;class name=&quot;CucumberRunner.GreenKartRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- E2EValidationTest --&gt;
-&lt;/suite&gt; &lt;!-- TestNG Session --&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-TestNG_Session" class="panel">
+        <div panel-name="testlist-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for TestNG Session</span>
+            <span class="header-content">Tests for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">E2EValidationTest (1 class)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-TestNG_Session" class="panel">
+        <div panel-name="group-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for TestNG Session</span>
+            <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-TestNG_Session" class="panel">
+        <div panel-name="times-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for TestNG Session</span>
+            <span class="header-content">Times for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_TestNG_Session');
-function tableData_TestNG_Session() {
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'productErrorValidation')
-data.setCell(0, 2, 'TestNGFramework_OrderSubmitTest.LoginErrorValidationTest')
-data.setCell(0, 3, 5618);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'CucumberRunner.GreenKartFailedRunner')
+data.setCell(0, 3, 58035);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginErrorValidation')
-data.setCell(1, 2, 'TestNGFramework_OrderSubmitTest.LoginErrorValidationTest')
-data.setCell(1, 3, 817);
-window.suiteTableData['TestNG_Session']= { tableData: data, tableDiv: 'times-div-TestNG_Session'}
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'CucumberRunner.GreenKartFailedRunner')
+data.setCell(1, 3, 58004);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'CucumberRunner.GreenKartRunner')
+data.setCell(2, 3, 55676);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'CucumberRunner.GreenKartRunner')
+data.setCell(3, 3, 55101);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'CucumberRunner.GreenKartRunner')
+data.setCell(4, 3, 54702);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'CucumberRunner.GreenKartFailedRunner')
+data.setCell(5, 3, 45953);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'CucumberRunner.E2EOrderSubmitRunner')
+data.setCell(6, 3, 21313);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'CucumberRunner.E2EOrderSubmitRunner')
+data.setCell(7, 3, 11130);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'CucumberRunner.ApplicationLoginRunner')
+data.setCell(8, 3, 165);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'CucumberRunner.ApplicationLoginRunner')
+data.setCell(9, 3, 53);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'CucumberRunner.ApplicationLoginRunner')
+data.setCell(10, 3, 18);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
-              <div id="times-div-TestNG_Session">
-              </div> <!-- times-div-TestNG_Session -->
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-TestNG_Session" class="panel">
+        <div panel-name="reporter-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for TestNG Session</span>
+            <span class="header-content">Reporter output for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-TestNG_Session" class="panel">
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-TestNG_Session" class="panel">
+        <div panel-name="chronological-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestNGFramework_OrderSubmitTest.LoginErrorValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
+              <div class="chronological-class-name">CucumberRunner.ApplicationLoginRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@c8f97a7)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginErrorValidation</span>
-                <span class="method-start">4877 ms</span>
+                <span class="method-name">runScenario("Admin page default login", "Application Login")</span>
+                <span class="method-start">684 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5709 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">6223 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">productErrorValidation</span>
-                <span class="method-start">8351 ms</span>
+                <span class="method-name">runScenario("Admin page default login", "Application Login")</span>
+                <span class="method-start">859 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13973 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User Page Sign Up", "Application Login")</span>
+                <span class="method-start">878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">934 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CucumberRunner.E2EOrderSubmitRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@c8f97a7)</span>
+                <span class="method-start">967 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Submitting Order", "Purchase Order on Ecomm Site")</span>
+                <span class="method-start">1001 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login Error Validation", "Purchase Order on Ecomm Site")</span>
+                <span class="method-start">22317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">33448 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CucumberRunner.GreenKartFailedRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@c8f97a7)</span>
+                <span class="method-start">33463 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CheckOut Product", "Search and Place Order from GreenKart")</span>
+                <span class="method-start">33940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</span>
+                <span class="method-start">33941 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</span>
+                <span class="method-start">33941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">92016 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CucumberRunner.GreenKartRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@c8f97a7)</span>
+                <span class="method-start">93030 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</span>
+                <span class="method-start">93122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CheckOut Product", "Search and Place Order from GreenKart")</span>
+                <span class="method-start">93122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart")</span>
+                <span class="method-start">93123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">148803 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

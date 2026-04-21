@@ -1,37 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-11T16:52:42 IST" name="Default suite" finished-at="2026-03-11T16:53:04 IST" duration-ms="22043">
+  <suite started-at="2026-04-20T13:29:52 IST" name="TestNg Session" finished-at="2026-04-20T13:30:25 IST" duration-ms="33614">
     <groups>
     </groups>
-    <test started-at="2026-03-11T16:52:42 IST" name="Default test" finished-at="2026-03-11T16:53:04 IST" duration-ms="22043">
-      <class name="TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-03-11T16:52:42 IST" name="setUpMethod" finished-at="2026-03-11T16:52:45 IST" duration-ms="2839" status="PASS">
+    <test started-at="2026-04-20T13:29:52 IST" name="E2EValidationTest" finished-at="2026-04-20T13:30:17 IST" duration-ms="25417">
+      <class name="TestNGFramework_OrderSubmitTest.LoginErrorValidationTest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNGFramework_OrderSubmitTest.LoginErrorValidationTest@484970b0]" started-at="2026-04-20T13:29:52 IST" name="setUpMethod" finished-at="2026-04-20T13:30:00 IST" duration-ms="8046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="submitOrderTest()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-03-11T16:52:45 IST" name="submitOrderTest" finished-at="2026-03-11T16:52:57 IST" duration-ms="12138" status="PASS">
+        <test-method signature="loginErrorValidation()[pri:0, instance:TestNGFramework_OrderSubmitTest.LoginErrorValidationTest@484970b0]" started-at="2026-04-20T13:30:00 IST" name="loginErrorValidation" finished-at="2026-04-20T13:30:02 IST" duration-ms="1776" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-03-11T16:52:57 IST" name="tearDown" finished-at="2026-03-11T16:52:58 IST" duration-ms="446" status="PASS">
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework_OrderSubmitTest.LoginErrorValidationTest@484970b0]" started-at="2026-04-20T13:30:02 IST" name="tearDown" finished-at="2026-04-20T13:30:04 IST" duration-ms="2296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-03-11T16:52:58 IST" name="setUpMethod" finished-at="2026-03-11T16:53:00 IST" duration-ms="2748" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNGFramework_OrderSubmitTest.LoginErrorValidationTest@484970b0]" started-at="2026-04-20T13:30:04 IST" name="setUpMethod" finished-at="2026-04-20T13:30:11 IST" duration-ms="6275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="orderHistoryTest()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-03-11T16:53:00 IST" name="orderHistoryTest" finished-at="2026-03-11T16:53:04 IST" depends-on-methods="TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest.submitOrderTest" duration-ms="3479" status="PASS">
+        <test-method signature="productErrorValidation()[pri:0, instance:TestNGFramework_OrderSubmitTest.LoginErrorValidationTest@484970b0]" started-at="2026-04-20T13:30:11 IST" name="productErrorValidation" finished-at="2026-04-20T13:30:16 IST" duration-ms="5659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework_OrderSubmitTest.LoginErrorValidationTest@484970b0]" started-at="2026-04-20T13:30:16 IST" name="tearDown" finished-at="2026-04-20T13:30:17 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNGFramework_OrderSubmitTest.LoginErrorValidationTest -->
+    </test> <!-- E2EValidationTest -->
+    <test started-at="2026-04-20T13:29:52 IST" name="E2EFrameworkTest" finished-at="2026-04-20T13:30:25 IST" duration-ms="33614">
+      <class name="TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-04-20T13:29:52 IST" name="setUpMethod" finished-at="2026-04-20T13:29:59 IST" duration-ms="7142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="submitOrderTest()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-04-20T13:29:59 IST" name="submitOrderTest" finished-at="2026-04-20T13:30:17 IST" duration-ms="17519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-04-20T13:30:17 IST" name="tearDown" finished-at="2026-04-20T13:30:18 IST" duration-ms="1128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-04-20T13:30:18 IST" name="setUpMethod" finished-at="2026-04-20T13:30:21 IST" duration-ms="3506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-04-20T13:30:21 IST" name="orderHistoryTest" finished-at="2026-04-20T13:30:25 IST" depends-on-methods="TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest.submitOrderTest" duration-ms="3263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-03-11T16:53:04 IST" name="tearDown" finished-at="2026-03-11T16:53:04 IST" duration-ms="301" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest@24aed80c]" started-at="2026-04-20T13:30:25 IST" name="tearDown" finished-at="2026-04-20T13:30:25 IST" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- E2EFrameworkTest -->
+  </suite> <!-- TestNg Session -->
 </testng-results>

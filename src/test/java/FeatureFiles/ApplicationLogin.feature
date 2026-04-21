@@ -21,11 +21,16 @@ Examples:
 | user     | 5678     |
 
 @AppLogin @PracticeLogin
-Scenario: User Page Sign Up
+Scenario Outline: User Page Sign Up
 
 Given User is on Practice landing page
 When User Signup into application
-| FirstName | LastName | Email          | PhoneNo    |
-| Rahul     | Shetty   | ahha@gmail.com | 9933476778 |
+| FirstName   | LastName   | Email   | PhoneNo   |
+| <FirstName> | <LastName> | <Email> | <PhoneNo> |
 Then Home Page is displayed
 And Cards are displayed
+
+Examples:
+
+| FirstName | LastName | Email          | PhoneNo    |
+| Rahul     | Shetty   | ahha@gmail.com | 9933476778 |

@@ -12,6 +12,7 @@ public class DevTools_VerifyAppResponsiveness {
 	public static void main(String[] args) throws InterruptedException {
 
         ChromeDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         
         DevTools devTools =driver.getDevTools();
         
@@ -20,8 +21,6 @@ public class DevTools_VerifyAppResponsiveness {
         //set parameters for device simulation
         
         devTools.send(Emulation.setDeviceMetricsOverride(768, 1024, 50, true, Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
-        
-        driver.manage().window().maximize();
         
         driver.get("https://rahulshettyacademy.com/angularAppdemo/");
 		

@@ -8,6 +8,7 @@ features="src/test/java/FeatureFiles/ApplicationLogin.feature",
 glue= {"StepDefinitions","MyHooks"},
 plugin= {"pretty","html:target/ApplicationLogin.html"},
 //tags="not @Smoke",
+tags ="@PracticeLogin",
 monochrome=true
 
 )

@@ -60,11 +60,13 @@ public class BrokenLinks {
 			
 			httpConn.connect();
 			
-			int resMessage= httpConn.getResponseCode();
+			int resCode= httpConn.getResponseCode();
+			
+			String resMessage=httpConn.getResponseMessage();
 			
 			httpConn.disconnect();
 			
-			System.out.println(hrefValue+ "--> "+resMessage);	
+			System.out.println(hrefValue+ "--> "+resCode);	
 		}
 		
 		driver.close();

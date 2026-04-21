@@ -2,7 +2,6 @@ C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\BasePage\G
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\BasePage\TestBase.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\DriverFactory\DriverFactory.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\DriverFactory\WebDriverManager.java
-C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\E2EStandAloneTest\E2ESeleniumCode.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\PageObjects\CartPage.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\PageObjects\CheckOutPage.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\PageObjects\ConfirmationPage.java
@@ -32,6 +31,7 @@ C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\D
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\DynamicDropDown.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\E2ECartSite.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\E2EFlightSite.java
+C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\E2EProductPurchaseSite.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\ElementVisibilityCheck.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\ExcelDataTest.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\ExplicitWait.java
@@ -68,6 +68,7 @@ C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\selenium\W
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\AssertionTest.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\ExtentReport.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\ParametersTest.java
+C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\RetryAnalyzer.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\RetryListener.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\Selenium_Grid.java
 C:\Users\MSUSERSL123\eclipse-workspace\SeleniumTutorial\src\main\java\TestNgTutorial\TestNgAnnotations_1.java

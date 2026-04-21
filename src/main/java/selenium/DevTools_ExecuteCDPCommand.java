@@ -15,10 +15,6 @@ public class DevTools_ExecuteCDPCommand {
 
         ChromeDriver driver = new ChromeDriver();
         
-        DevTools devTools =driver.getDevTools();
-        
-        devTools.createSession();
-        
         Map<String,Object> params = new HashMap<>();
         params.put("width", 768);
         params.put("height",1024);

@@ -14,6 +14,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentReport {
 	
 	ExtentReports extentReport;
+	WebDriver driver;
 	
 	@BeforeTest
 	public void config()
@@ -36,7 +37,7 @@ public class ExtentReport {
     {
 	  ExtentTest test= extentReport.createTest("extentReportGeneration");
 	  
-	  WebDriver driver = new ChromeDriver();
+	  driver = new ChromeDriver();
 	
 	  driver.get("https://rahulshettyacademy.com");
 	  
@@ -47,9 +48,6 @@ public class ExtentReport {
 	  //test.fail("Tc failed");
 	  
 	  //Assert.assertEquals(actualTitle, expectedTitle);
-	  
-	  driver.close();
-	  
 	 
     }
 	
@@ -57,6 +55,7 @@ public class ExtentReport {
 	@AfterTest
 	public void tearDown()
 	{
+		 driver.close();
 		 extentReport.flush();
 	}
 

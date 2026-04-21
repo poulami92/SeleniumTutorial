@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNgTutorial.TestNgDataProvider_Excel">
+      <class name="TestNgTutorial.ExtentReport">
         <methods>
-          <include name="enterTestDate"/>
+          <include name="extentReportGeneration"/>
+          <include name="tearDown"/>
+          <include name="config"/>
         </methods>
-      </class> <!-- TestNgTutorial.TestNgDataProvider_Excel -->
+      </class> <!-- TestNgTutorial.ExtentReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

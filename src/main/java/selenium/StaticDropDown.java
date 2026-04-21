@@ -21,6 +21,7 @@ public class StaticDropDown {
 		
 		String selectedValue = sel.getFirstSelectedOption().getText();  
 		
+		
 
 	}
 

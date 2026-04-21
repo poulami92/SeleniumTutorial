@@ -41,7 +41,7 @@ public class TestUtil {
 		return destLoc;
 	}
 	
-	public ExtentReports getExtentReporter(String testName)
+	public ExtentReports getExtentReporter()
 	{
 		String path = System.getProperty("user.dir")+"\\ExtentReports\\index.html";
 		ExtentSparkReporter extentSpark = new ExtentSparkReporter(path);

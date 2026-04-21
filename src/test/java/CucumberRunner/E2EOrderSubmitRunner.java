@@ -9,7 +9,7 @@ glue={"StepDefinitions","MyHooks"},
 monochrome=true,
 //tags="@Smoke",
 //tags="@ErrorValidation",
-plugin= {"html:CucumberReports/cucumber.html"}
+plugin= {"html:CucumberReports/OrderSubmit.html"}
 )
 public class E2EOrderSubmitRunner extends AbstractTestNGCucumberTests {
 

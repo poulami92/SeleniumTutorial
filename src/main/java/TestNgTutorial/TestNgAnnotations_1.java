@@ -37,7 +37,7 @@ public class TestNgAnnotations_1 {
 		System.out.println("enter url");
 	}
 	
-	@Test(retryAnalyzer=RetryListener.class)
+	@Test(retryAnalyzer=RetryAnalyzer.class)
 	public void googleTitleTest()
 	{
 		System.out.println("Google Title Test");

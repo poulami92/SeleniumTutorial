@@ -33,7 +33,7 @@ public class TestNgDataProvider_Json {
 	
 	public List<HashMap<String, String>> getJsonDataToMap() throws IOException
 	{
-		Path path = Path.of("C:\\Users\\MSUSERSL123\\eclipse-workspace\\SeleniumTutorial\\src\\main\\java\\TestNgTutorial\\data.json");
+		Path path = Path.of(System.getProperty("user.dir")+"\\src\\main\\java\\TestNgTutorial\\data.json");
 		String jsonData = Files.readString(path);
 		ObjectMapper mapper = new ObjectMapper();
 

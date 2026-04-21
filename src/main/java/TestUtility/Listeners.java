@@ -19,7 +19,7 @@ public class Listeners extends TestUtil implements ITestListener{
 	
 	public void onStart(ITestContext context)
 	{
-		extentReport = getExtentReporter(context.getName());
+		extentReport = getExtentReporter();
 		//System.out.println("Test Tag Start "+context.getName());
 	}
 
@@ -53,6 +53,7 @@ public class Listeners extends TestUtil implements ITestListener{
 	public void onTestSkipped(ITestResult result)
 	{
 		System.out.println("Test Skipped "+result.getName());
+		test.log(Status.SKIP, "Test Skipped");
 	}
 	
 	public void onFinish(ITestContext context)

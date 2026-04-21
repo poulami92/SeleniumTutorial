@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestNg Session" parallel ="tests">
+<suite name="TestNg Session" parallel ="tests" thread-count="5">
 
 <listeners>
    <listener class-name="TestUtility.Listeners"/>
 </listeners>
 
-<test name="E2EFrameworkTest" enabled="true" thread-count="5"> 
+<test name="E2EFrameworkTest" enabled="true"> 
   <classes>
     <class name = "TestNGFramework_OrderSubmitTest.OrderSubmitE2ETest" />
   </classes>
 </test>
 
-<test name="E2EValidationTest" enabled="true" thread-count="5"> 
+<test name="E2EValidationTest" enabled="true"> 
   <classes>
     <class name = "TestNGFramework_OrderSubmitTest.LoginErrorValidationTest" />
   </classes>
