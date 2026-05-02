@@ -12,8 +12,6 @@ import lombok.Synchronized;
 public class DriverFactory {
 	
 	private static ThreadLocal<WebDriver> th = new ThreadLocal<>();
-	private WebDriver driver;
-	private ChromeOptions options;
 	
 	public static WebDriver setDriver(String browserName,String headless)
 	{
