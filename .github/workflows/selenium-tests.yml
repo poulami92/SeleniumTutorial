@@ -27,6 +27,15 @@ jobs:
         cache: maven
     - name: Install dependencies & run tests
       run: mvn clean test -PCucumberTest -Dheadless=true
+    - name: Rerun failed scenarios
+      run: |
+          if [ -f target/failed_scenarios.txt ]; then
+            echo "Rerunning failed scenarios..."
+            mvn test -Dcucumber.features=@target/failed_scenarios.txt
+          else
+            echo "No failed scenarios file found, skipping rerun"
+          fi
+
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
