@@ -11,7 +11,9 @@ public class ConfigReader {
 	public ConfigReader() throws IOException
 	{
 		prop = new Properties();
-		FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Config\\config.properties");
+		String configPath = "/src/main/java/Config/config.properties";
+		//FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Config\\config.properties");
+		FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+configPath);
 		prop.load(fs);
 	}
 	
