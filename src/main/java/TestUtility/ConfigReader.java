@@ -20,7 +20,6 @@ public class ConfigReader {
 	public String getUrl() {
         return prop.getProperty("GreenKartUrl");
     }
-	
 	public String getBrowser() {
         return prop.getProperty("browser");
     }
