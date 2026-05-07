@@ -22,7 +22,7 @@ Scenario Outline: Submitting Order
 
   And User Place Order
 
-  Then "THANKYOU FOR THE ORDER1." message displayed on confirmation page
+  Then "THANKYOU FOR THE ORDER." message displayed on confirmation page
 
 Examples:
 | Username      | Password  | Products    |

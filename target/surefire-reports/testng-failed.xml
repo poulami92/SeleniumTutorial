@@ -13,17 +13,10 @@
       <class name="CucumberRunner.GreenKartFailedRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="2"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- CucumberRunner.GreenKartFailedRunner -->
-      <class name="CucumberRunner.E2EOrderSubmitRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- CucumberRunner.E2EOrderSubmitRunner -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

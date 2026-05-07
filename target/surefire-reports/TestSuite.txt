@@ -1,19 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 149.9 s <<< FAILURE! -- in TestSuite
-CucumberRunner.E2EOrderSubmitRunner.runScenario["Submitting Order", "Purchase Order on Ecomm Site"](1) -- Time elapsed: 21.31 s <<< FAILURE!
-java.lang.AssertionError: expected [THANKYOU FOR THE ORDER.] but found [THANKYOU FOR THE ORDER1.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at StepDefinitions.OrderSubmitSteps.verifyConfirmationMessage(OrderSubmitSteps.java:92)
-	at ✽."THANKYOU FOR THE ORDER1." message displayed on confirmation page(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/OrderSubmit.feature:25)
-
-CucumberRunner.GreenKartFailedRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](3) -- Time elapsed: 58.04 s <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 50.42 s <<< FAILURE! -- in TestSuite
+CucumberRunner.GreenKartFailedRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](1) -- Time elapsed: 7.815 s <<< FAILURE!
 java.lang.AssertionError: expected [Beetroot] but found [No data]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
@@ -24,7 +13,7 @@ java.lang.AssertionError: expected [Beetroot] but found [No data]
 	at StepDefinitions.GreenKartOffersPageSteps.check_product_exists(GreenKartOffersPageSteps.java:40)
 	at ✽.Check product exists(file:///C:/Users/MSUSERSL123/eclipse-workspace/SeleniumTutorial/src/test/java/FeatureFiles/SearchGreenKartProduct.feature:11)
 
-CucumberRunner.GreenKartRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](3) -- Time elapsed: 55.68 s <<< FAILURE!
+CucumberRunner.GreenKartRunner.runScenario["Search Experience in both Home and Offers Page", "Search and Place Order from GreenKart"](1) -- Time elapsed: 15.34 s <<< FAILURE!
 java.lang.AssertionError: expected [Beetroot] but found [No data]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
